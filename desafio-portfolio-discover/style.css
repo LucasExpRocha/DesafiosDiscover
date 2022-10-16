@@ -1,0 +1,383 @@
+/* Global Variables */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+
+    /* Margin */
+
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2-0: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /* Fonts */
+
+    --h1-font-size:1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    
+    --font-family: 'Merriweather Sans', sans-serif;
+
+    /* Font Weight */
+    --font-normal: 400;
+    --semi-bold: 500;
+    --bold: 700;
+}
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main */
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Display Body */
+
+body {
+    padding: 2.5rem;
+    background: var(--body-bg-color);
+    font-family: var(--font-family);
+    grid-template-areas: "aside main";
+    gap: 60px;
+}
+
+.aside__container {
+    grid-area: aside;
+    width: 348px;
+    flex-direction: column;
+}
+
+.main__container {
+    grid-area: main;
+    width: 952px;
+    flex-direction: column;
+}
+
+.container {
+    border-radius: 19px;
+    background: var(--bg-cards);
+    color: var(--text-color);
+    background: var(--bg-cards);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+    margin-bottom: var(--mb-2-0);
+}
+
+/* Display aside */
+
+/* Header Aside */
+
+.header__container {
+    width: 348px;
+    height: 292px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile-img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin-bottom: var(--mb-1-5);
+    border: 2px solid #00FF00;
+}
+
+.informations__container {
+    flex-direction: column;
+    width: 348px;
+    height: 348px;
+    border-radius: 19px;
+}
+
+.name-title {
+    margin-bottom: var(--mb-0-5);
+    font-weight: var(--bold);
+}
+
+.div-subtitle {
+    font-weight: var(--font-normal);
+}
+
+/* Informations */
+
+.informations__container {
+    padding: 2.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info-icon {
+    height: 14px;
+    width: 14px;
+    color: var(--text-color)
+}
+
+.text-info {
+    font-weight: var(--font-normal);
+    font-size: 13px;
+    margin-left: 1.25rem;
+    align-items: baseline;
+}
+
+/* Tecnologies */
+
+.tecnology__container {
+    width: 348px;
+    height: 208px;
+    padding: 1.25rem;
+}
+
+.tecnology-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tecnology-tools {
+    grid-template-columns: repeat(3, auto);
+    margin-left: 10px;
+}
+
+.tecnology-icon {
+    width: 86px;
+    height: 24px;
+    padding-top: 6px;
+    border-radius: 12px;
+    background-color: var(--bg-techs);
+    font-size: 10px;
+    color: #22212C;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: var(--bold);
+}
+
+
+/* Experiences */ 
+
+.experiences__container {
+    width: 348px;
+    height: 352px;
+    padding: 20px;
+}
+
+.experiences__title {
+    margin-top: 10px;
+}
+
+.experiences__container > ul {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.experience-title {
+    font-size: 14px;
+    font-weight: var(--bold);
+}
+
+.experience-subtitle {
+    font-size: 12px;
+    font-weight: var(--font-normal);
+}
+
+.experience-data {
+    font-size: 12px;
+    font-weight: 300;
+    opacity: .9;
+}
+
+.experiences__container > ul > li {
+    margin-bottom: 10px;
+}
+
+/* Education */ 
+
+.education__container {
+    width: 348px;
+    height: 352px;
+    padding: 20px;
+}
+
+.education__title {
+    margin-top: 10px;
+}
+
+.education__container > ul {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.education-title {
+    font-size: 14px;
+    font-weight: var(--bold);
+}
+
+.education-subtitle {
+    font-size: 12px;
+    font-weight: var(--font-normal);
+}
+
+.education-data {
+    font-size: 12px;
+    font-weight: 300;
+    opacity: .9;
+}
+
+.education__container > ul > li {
+    margin-bottom: 10px;
+}
+
+
+/* "BODY" */
+
+/* Projects */
+
+.projects__container {
+    width: 952px;
+    height: 86px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+/* my onix */
+
+.onix__container {
+    gap: 30px;
+}
+
+.my-onix__container {
+    width: 461px;
+    height: 186px;
+    padding: 30px;
+}
+
+.onix__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.img-folder {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+}
+
+.onix-title {
+    font-size: 16px;
+    font-weight: var(--bold);
+}
+
+.text-container {
+    font-size: 14px;
+    font-weight: var(--font-normal);
+    margin-bottom: 30px;
+}
+
+.footer-container {
+    justify-content: space-between;
+}
+
+.use-tool {
+    display: flex;
+    align-items: center;
+}
+
+.check {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: yellow;
+    border: 2px solid #837E9F;
+}
+
+.tools {
+
+    margin-left: 20px;
+}
+
+/* Posts */
+
+.posts__container {
+    height: 86px;
+    width: 952px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+/* Status Post */
+
+.status__posts__container {
+    width: 952px;
+    height: 201px;
+    align-items: center;
+    padding: 35px;
+    gap: 60px;
+}
+
+.post-perfil-img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin-bottom: var(--mb-1-5);
+}
+
+.status-text {
+    width: 612px;
+    height: 129px;
+}
+
+.status-title {
+    font-size: 18px;
+    font-weight: var(--bold);
+}
+
+.status-date {
+    font-size: 14px;
+    font-weight: var(--font-normal);
+}
+
+.status-err {
+    margin-top: 28px;
+}
+
+.status-error {
+    font-size: 16px;
+    font-weight: var(--font-normal);
+}
+
+.tools-status > span {
+    font-size: 14px;
+    font-weight: var(--font-normal);
+}
