@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+body {
+    width: 100%;
+}
+
+main {
+    width: 90rem;
+    height: 100vh;
+
+    margin: 0 auto;
+}
+
+main > section {
+    width: 100%;
+
+    display: grid;
+    align-items: center;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "count rocket"
+}
+
+section > .container {
+    grid-area: 1 / 1 ;
+
+    justify-content: center;
+    align-items: center;
+    display: grid;
+
+    gap: 2rem;
+}
+
+.container > h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 3.375px;
+    letter-spacing: 0.105em;
+
+    text-transform: uppercase;
+
+    color: #6C63FF;
+    text-align: center;
+}
+
+.container > div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.container > div > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+
+    text-transform: capitalize;
+
+    color: #C8C8C8;
+}
+
+.time {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 108px;
+
+    color: #4D4C59;
+}
+
+.container > p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #9C9AB6;
+    text-align: center;
+}
+
+.container > button {
+    align-self: center;
+
+    padding: 1rem 2rem;
+    background-color: #6C63FF;
+    border: none;
+    border-radius: .625rem;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+section > img {
+    grid-area: 1 / 2;
+    padding: 2rem;
+}
